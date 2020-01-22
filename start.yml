@@ -38,5 +38,5 @@ stages:
     - script: make
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
 
-    - script: ./build_output/threadTest
+    - bash: ./build_output/threadTest
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
