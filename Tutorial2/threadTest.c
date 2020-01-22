@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
           fprintf(stderr,"init fail\n");
           exit(1);
         }
-
+        printf("Smoke some herb\n");
 
 
 
