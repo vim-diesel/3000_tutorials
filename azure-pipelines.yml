@@ -12,12 +12,14 @@ pool:
 steps:
 - script:
     ls -al
-    echo
-    cd Tutorial2
-    echo
-    make
-    ls -al
-  displayName: 'make'
+  displayName: 'list'
+- script:
+      cd Tutorial2
+    displayName: 'cd '
+- script:
+      make
+    displayName: 'make '
 - script:
     echo $PWD
     ls -al
+  displayName: 'pwd + list'
