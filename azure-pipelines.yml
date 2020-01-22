@@ -12,8 +12,10 @@ pool:
 steps:
 - script:
     echo $PWD
+    var=$(pwd)
+    echo "$var"
     cd Tutorial2
     make
-    bash ./build_output/threadTest
+    bash /build_output/threadTest
 
   displayName: 'make'
