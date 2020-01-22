@@ -32,3 +32,4 @@ stages:
 
     - script: ls -al
     - script: cd ./Tutorial2
+    - script: ls -al
