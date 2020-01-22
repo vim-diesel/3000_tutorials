@@ -31,5 +31,7 @@ stages:
       displayName: 'Base: Printing'
 
     - script: ls -al
-    - script: cd ./Tutorial2
+
     - script: ls -al
+      workingDirectory: $(Agent.BuildDirectory)
+      
