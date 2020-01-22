@@ -10,7 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: |
+- script:
+    echo $PWD
     cd Tutorial2
-    make 
+    make
   displayName: 'make'
