@@ -13,7 +13,7 @@ steps:
 - script:
     echo $PWD
     cd Tutorial2
-    ls -al
     make
+    bash ./build_output/threadTest
 
   displayName: 'make'
