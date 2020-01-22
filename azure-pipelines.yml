@@ -13,9 +13,6 @@ steps:
 - script:
     make
   displayName: 'make'
-- task:
-    inputs:
-      targetType: 'inline'
-      script:
-        echo $PWD
-        ll
+- script:
+    echo $PWD
+    ll
