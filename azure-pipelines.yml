@@ -11,9 +11,11 @@ pool:
 
 steps:
 - script:
-    echo $PWD
-    echo
-    cd Tutorial2
-    echo make
-    echo ./build_output/threadTest
+    make
   displayName: 'make'
+- task:
+    inputs:
+      targetType: 'inline'
+      script:
+        echo $PWD
+        ll
