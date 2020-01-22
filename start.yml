@@ -39,7 +39,7 @@ stages:
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
 
     - script: ls -al
-      workingDirectory: /home/vsts/work/1/s/Tutorial2/build_output/
+      workingDirectory: /home/vsts/work/1/s/Tutorial2/
 
-    - bash: ./build_output/threadTest
+    - bash: ./threadTest
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
