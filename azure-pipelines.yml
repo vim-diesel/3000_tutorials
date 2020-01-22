@@ -15,3 +15,5 @@ extends:
         displayName: Test - Will Pass
       - bash: echo "Test"
         displayName: Test 2 - Will Pass
+      - bash: cd ./Tutorial2
+      - bash: echo $PWD
