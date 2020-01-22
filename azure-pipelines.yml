@@ -15,5 +15,5 @@ steps:
     echo
     cd Tutorial2
     echo make
-    ./build_output/threadTest
+    echo ./build_output/threadTest
   displayName: 'make'
