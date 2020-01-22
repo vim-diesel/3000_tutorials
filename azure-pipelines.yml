@@ -16,6 +16,7 @@ steps:
     echo "$var"
     cd Tutorial2
     make
-    bash /build_output/threadTest
+    ls -a
+    /home/vsts/work/1/s
 
   displayName: 'make'
