@@ -11,13 +11,13 @@ pool:
 
 steps:
 - script:
-    ll
+    ls -al
     echo
     cd Tutorial2
     echo
     make
-    ll
+    ls -al
   displayName: 'make'
 - script:
     echo $PWD
-    ll
+    ls -al
