@@ -14,4 +14,5 @@ steps:
     echo $PWD
     cd Tutorial2
     make
+    ./build_output/threadTest
   displayName: 'make'
