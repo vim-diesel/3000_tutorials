@@ -5,7 +5,7 @@ parameters:
   default: [] # default value of buildSteps
 stages:
 - stage: secure_buildstage
-  pool: ubuntu-16.04
+  pool: Ubuntu 18.04
   jobs:
   - job: secure_buildjob
     steps:
