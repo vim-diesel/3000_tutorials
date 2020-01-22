@@ -10,16 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script:
-    ls -al
-  displayName: 'list'
-- script:
-      cd Tutorial2
-    displayName: 'cd '
-- script:
-      make
-    displayName: 'make '
-- script:
-    echo $PWD
-    ls -al
-  displayName: 'pwd + list'
+- script: ls -al
+
+- script: cd Tutorial2
+
+- script: make
+
+- script: echo $PWD
