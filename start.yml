@@ -5,7 +5,8 @@ parameters:
   default: [] # default value of buildSteps
 stages:
 - stage: secure_buildstage
-  pool: Ubuntu 18.04
+  pool:
+    vmImage: 'ubuntu-latest'
   jobs:
   - job: secure_buildjob
     steps:
