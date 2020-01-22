@@ -41,5 +41,5 @@ stages:
     - script: ls -al
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
 
-    - bash: ./threadTest
+    - script: ./threadTest
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
