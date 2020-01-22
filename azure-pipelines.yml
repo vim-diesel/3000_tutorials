@@ -3,17 +3,17 @@
 # Add steps that publish test results, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/c-cpp/gcc
 
+# File: azure-pipelines.yml
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- script: ls -al
-
-- script: cd ./Tutorial2
-
-- script: make
-
-- script: echo $PWD
+extends:
+  template: start.yml
+  parameters:
+    buildSteps:
+      - bash: echo Test #Passes
+        displayName: Test - Will Pass
+      - bash: echo "Test"
+        displayName: Test 2 - Will Pass
+      - script: echo "Script Test" # Comment out to successfully pass
+        displayName: Test 3 - Will Fail
