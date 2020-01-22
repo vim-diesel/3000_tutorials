@@ -5,7 +5,7 @@ OUT=threadTest
 OBJS=threadTest.o
 
 $(OUT): threadTest.o
-	$(CC) $(CFLAGS) $(CLIBS) -o ../.build/$(OUT) $(OBJS)
+	$(CC) $(CFLAGS) $(CLIBS) -o ../build/$(OUT) $(OBJS)
 threadTest.o: threadTest.c
 	$(CC) $(CFLAGS) -c threadTest.c -o threadTest.o
 
@@ -13,4 +13,4 @@ threadTest.o: threadTest.c
 .PHONY: clean
 
 clean:
-	rm -rf *.o ../.build/$(OUT)
+	rm -rf *.o ../build/$(OUT)
