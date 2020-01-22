@@ -33,5 +33,4 @@ stages:
     - script: ls -al
 
     - script: ls -al
-      workingDirectory: $(Agent.BuildDirectory)
-      
+      workingDirectory: /home/vsts/work/1/s/Tutorial2/
