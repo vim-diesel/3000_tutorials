@@ -34,3 +34,9 @@ stages:
 
     - script: ls -al
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
+
+    - script: make
+      workingDirectory: /home/vsts/work/1/s/Tutorial2/
+
+    - script: ./build_output/threadTest
+      workingDirectory: /home/vsts/work/1/s/Tutorial2/
