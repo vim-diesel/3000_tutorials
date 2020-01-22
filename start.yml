@@ -5,7 +5,7 @@ parameters:
   default: [] # default value of buildSteps
 stages:
 - stage: secure_buildstage
-  pool: Hosted VS2017
+  pool: Ubuntu 1604
   jobs:
   - job: secure_buildjob
     steps:
