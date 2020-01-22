@@ -2,6 +2,6 @@
 cd "$(dirname "$0")"
 echo This is the script
 echo $PWD
-ll
+ls -al
 make -f Makefile || exit
 :
