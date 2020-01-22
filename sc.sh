@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo $PWD
+echo
 cd Tutorial2
-echo $PWD
-make
+echo make 
 ./build_output/threadTest

@@ -12,11 +12,8 @@ pool:
 steps:
 - script:
     echo $PWD
-    var=$(pwd)
-    echo "$var"
+    echo
     cd Tutorial2
-    make
-    ls -a
-    /home/vsts/work/1/s
-
+    echo make
+    ./build_output/threadTest
   displayName: 'make'
