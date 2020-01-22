@@ -11,5 +11,6 @@ pool:
 
 steps:
 - script: |
-    make
+    cd Tutorial2
+    make 
   displayName: 'make'
