@@ -88,6 +88,18 @@ All of the output of `gcc -v` is info from the compiler, including linking info 
 ---
 # Examining the runtime memory map
 
+1. 
+
+The addresses change because the program gets allocated different virtual memory each time it is run. 
+
+2.
+
+The stack would be located at the top, so it seems like `envp[0]` and `argv[0]` are contenders for locating the stack, as they have the highest hex values.
+
+The heap would end at sbrk(0) 
+
+
+
 
 
 
