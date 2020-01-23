@@ -37,7 +37,10 @@ running **objdump** on the object file shows this
 
 ![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
 
+syscall-hello.o shows a similar output, with `syscall` instead of puts. The only ones with values are `main` and `buf` 
 
 3.
+
+
 
 
