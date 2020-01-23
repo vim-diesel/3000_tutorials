@@ -24,7 +24,6 @@ int main(int argc, char *argv[], char *envp[])
         printf("&gmsg:     %lx\n", (unsigned long) &gmsg);
 
         printf("main:      %lx\n", (unsigned long) &main);
-
         printf("sbrk(0):   %lx\n", (unsigned long) sbrk(0));
         printf("&buf:      %lx\n", (unsigned long) &buf);
 

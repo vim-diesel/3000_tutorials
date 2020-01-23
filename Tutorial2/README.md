@@ -96,9 +96,11 @@ The addresses change because the program gets allocated different virtual memory
 
 The stack would be located at the top, so it seems like `envp[0]` and `argv[0]` are contenders for locating the stack, as they have the highest hex values.
 
-The heap would end at sbrk(0) 
+`sbrk(0)` gives us the start of the heap, because we have not used `malloc` yet. after that it gets us the end of the heap.
 
+The code begins at `main`
 
+The global variables have a lower hex value, as expected as they are before the heap.
 
 
 
