@@ -112,7 +112,10 @@ When stack and heap collide it is a stack overflow, or the call to grow the heap
 
 4.
 
+When we call `malloc` with an extremely high value, then the value returned by `sbrk(0)` remains unchanged. 
+* Running `strace` shows the error `ENOMRM (CANNOT ALLOCATE MEMORY)` returning from `mmap`. Instead of exiting the program continues to try allocating until the for loop is complete, which is why the value of sbrk(0) remains unchanged when we call malloc for big values.
 
+At `malloc(132000)` we see mmap being called repeateadly, but no `brk()` and at the end `sbrk(0)` remains unchanged. 
 
 
 
