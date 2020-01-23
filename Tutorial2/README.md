@@ -106,6 +106,8 @@ The global variables have a lower hex value, as expected as they are before the 
 The local variable, a `char* lmsg`, has it's *value in the data segment if the address space. This is because it is a string literal. *
 It's address (&lmsg) is in the stack, because it is a local varibale. 
 
+3. 
+
 
 
 

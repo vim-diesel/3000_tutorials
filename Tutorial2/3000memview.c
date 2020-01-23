@@ -19,6 +19,7 @@ int main(int argc, char *argv[], char *envp[])
         printf("envp[0]:   %lx\n", (unsigned long) envp[0]);
 
         printf("lmsg:      %lx\n", (unsigned long) lmsg);
+        printf("lmsg:      %s\n",  lmsg);
         printf("&lmsg:     %lx\n", (unsigned long) &lmsg);
         printf("&lmsg as p:     %p\n",  &lmsg);
         printf("gmsg:      %lx\n", (unsigned long) gmsg);
