@@ -64,10 +64,11 @@ puts
 .rela.eh_frame
 `
 
-running **objdump -td** on the object file shows this 
+running **objdump -td hello-dyn.o** on the dynamic object file shows this 
 
 ![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20122615.png)
 
+objdump -td on the static program is too long to read in console
 
 >> Object files are almost full executables. They contain machine code, but that code still requires a relocation step. It also contains metadata about the addresses of its variables and functions (called symbols) in an associative data structure called a symbol table. The addresses may not be the final address of the symbol in the final executable. They also contain some information for the loader and probably some other stuff.
 >>(https://nickdesaulniers.github.io/blog/2016/08/13/object-files-and-symbols/)
