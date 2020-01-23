@@ -28,18 +28,16 @@ http://man7.org/linux/man-pages/man2/write.2.html search in upper right
 # Comparing C and assembly
 
 1. 
-The hello-static program defines much more symbols than the hello-dyn. 
 
-However the syscall-hello-dynamic has one extra symbol a "0000000000201010 D buf" right after a start symbol
-
-nm -u ./hello-dyn
-
-shows 6 undefined symbols, where the static has none. 
+The hello-static program defines much more symbols than the hello-dyn. However the syscall-hello-dynamic has one extra symbol a '0000000000201010 D buf' right after a start symbol 'nm -u ./hello-dyn' shows 6 undefined symbols, where the static has none. 
 
 2.
+
 running **objdump** on the object file shows this 
 
-!(https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
+![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
 
+
+3.
 
 
