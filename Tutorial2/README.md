@@ -108,6 +108,11 @@ It's address (&lmsg) is in the stack, because it is a local varibale.
 
 3. 
 
+When stack and heap collide it is a stack overflow, or the call to grow the heap will fail(return `NULL`)
+
+4.
+
+
 
 
 
