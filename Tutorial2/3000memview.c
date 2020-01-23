@@ -20,8 +20,11 @@ int main(int argc, char *argv[], char *envp[])
 
         printf("lmsg:      %lx\n", (unsigned long) lmsg);
         printf("&lmsg:     %lx\n", (unsigned long) &lmsg);
+        printf("&lmsg as p:     %p\n",  &lmsg);
         printf("gmsg:      %lx\n", (unsigned long) gmsg);
         printf("&gmsg:     %lx\n", (unsigned long) &gmsg);
+        printf("&buffer_size:     %lx\n", (unsigned long) &buffer_size);
+        
 
         printf("main:      %lx\n", (unsigned long) &main);
         printf("sbrk(0):   %lx\n", (unsigned long) sbrk(0));

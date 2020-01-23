@@ -95,13 +95,16 @@ The addresses change because the program gets allocated different virtual memory
 2.
 
 ![adr space](https://github.com/darshanime/notes/raw/master/assets/ucbOS_11.png)
-The stack would be located at the top, so it seems like `envp[0]` and `argv[0]` are contenders for locating the stack, as they have the highest hex values.
+The stack would be located at the top, so anything with 7ffff is near top, in the stack. 
 
 `sbrk(0)` gives us the start of the heap, because we have not used `malloc` yet. after that it gets us the end of the heap.
 
-The code begins at `main`
+The code begins at `main` at the smallest value. 
 
-The global variables have a lower hex value, as expected as they are before the heap.
+The global variables have a lower hex value, as expected as they are before the heap. 
+
+The local variable, a `char* lmsg`, has it's *value in the data segment if the address space. This is because it is a string literal. *
+It's address (&lmsg) is in the stack, because it is a local varibale. 
 
 
 
