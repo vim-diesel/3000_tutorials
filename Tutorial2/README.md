@@ -78,7 +78,11 @@ In syscall-hello.s we can see a syscall, everything else similar
 
 4. 
 
-The disassembly only includes <main> 
+The disassembly from objdump only includes the `main` section, whereas the `gcc -S` includes other sections
+
+5. 
+
+
 
 
 
