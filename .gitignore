@@ -1,3 +1,4 @@
 build/
 Tutorial2/build_output/threadTest
 *.o
+*output*
