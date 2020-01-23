@@ -33,11 +33,20 @@ The hello-static program defines much more symbols than the hello-dyn. However t
 
 2.
 
+**nm** shows `0000000000000000 r .LC0
+                 U _GLOBAL_OFFSET_TABLE_
+0000000000000000 T main
+                 U puts
+`
+
+
 running **objdump** on the object file shows this 
 
 ![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
 
 syscall-hello.o shows a similar output, with `syscall` instead of puts. The only ones with values are `main` and `buf` 
+
+
 
 3.
 
