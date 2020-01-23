@@ -33,12 +33,16 @@ The hello-static program defines much more symbols than the hello-dyn. However t
 
 2.
 
-**nm** shows `0000000000000000 r .LC0
+>> Object files are almost full executables. They contain machine code, but that code still requires a relocation step. It also contains metadata about the addresses of its variables and functions (called symbols) in an associative data structure called a symbol table. The addresses may not be the final address of the symbol in the final executable. They also contain some information for the loader and probably some other stuff.
+>>(https://nickdesaulniers.github.io/blog/2016/08/13/object-files-and-symbols/)
+
+**nm** shows 
+`0000000000000000 r .LC0
                  U _GLOBAL_OFFSET_TABLE_
 0000000000000000 T main
                  U puts
 `
-syscall-hello.o shows a similar output, with `syscall` instead of puts, with a `buf` symbol
+syscall-hello.o shows a similar output, with `syscall` instead of puts, and with a `buf` symbol
 
 running **strings** 
 
@@ -52,26 +56,15 @@ main
 _GLOBAL_OFFSET_TABLE_
 puts
 .symtab
-.strtab
-.shstrtab
-.text
-.data
-.bss
-.rodata.str1.1
-.rela.text.startup
-.comment
-.note.GNU-stack
-.rela.eh_frame
-`
+...`
 
-running **objdump -td hello-dyn.o** on the dynamic object file shows this 
+running **objdump -td hello-dyn.o** on the dynamic object file shows this (objdump -td on the static object file (hello-static.o) is too long to read in console.)
 
 ![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20122615.png)
 
-objdump -td on the static program is too long to read in console
+These instructions can be stored as a unisgned char array `unsigned char[]` because they are all hexadecimal pairs
 
->> Object files are almost full executables. They contain machine code, but that code still requires a relocation step. It also contains metadata about the addresses of its variables and functions (called symbols) in an associative data structure called a symbol table. The addresses may not be the final address of the symbol in the final executable. They also contain some information for the loader and probably some other stuff.
->>(https://nickdesaulniers.github.io/blog/2016/08/13/object-files-and-symbols/)
+
 
 
 
