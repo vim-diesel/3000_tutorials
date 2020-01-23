@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdlib.h>  //exit()
+#include <unistd.h>  //open() read() fork() pipe()
 
 char *gmsg = "Global Message";
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[], char *envp[])
         printf("&buf:      %lx\n", (unsigned long) &buf);
 
         for (i = 0; i<buffer_size; i++) {
-                buf[i] = (char *) malloc(4096);
+                buf[i] = (char *) malloc(2147483648);
         }
         
         printf("buf[0]:    %lx\n", (unsigned long) buf[0]);
