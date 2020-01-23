@@ -35,3 +35,16 @@ Answers for Tutorial 1
   'cd' is built into shell because running "which cd" shows there is no executable for it.
 
 10.
+linux-vdso.so.1 (0x00007fffc18f3000)
+libprocps.so.6 => /lib/x86_64-linux-gnu/libprocps.so.6 (0x00007fafccd80000)
+libtinfo.so.5 => /lib/x86_64-linux-gnu/libtinfo.so.5 (0x00007fafccb50000)
+libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fafcc940000)
+libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fafcc540000)
+libsystemd.so.0 => /lib/x86_64-linux-gnu/libsystemd.so.0 (0x00007fafcc2b0000)
+/lib64/ld-linux-x86-64.so.2 (0x00007fafcd400000)
+librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007fafcc0a0000)
+liblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007fafcbe60000)
+liblz4.so.1 => /usr/lib/x86_64-linux-gnu/liblz4.so.1 (0x00007fafcbc40000)
+libgcrypt.so.20 => /lib/x86_64-linux-gnu/libgcrypt.so.20 (0x00007fafcb920000)
+libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fafcb700000)
+libgpg-error.so.0 => /lib/x86_64-linux-gnu/libgpg-error.so.0 (0x00007fafcb4e0000)
