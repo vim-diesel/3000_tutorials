@@ -39,7 +39,7 @@ shows 6 undefined symbols, where the static has none.
 2.
 running **objdump** on the object file shows this 
 
-![alt](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
+!(https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
 
 
 
