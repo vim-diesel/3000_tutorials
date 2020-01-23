@@ -94,6 +94,7 @@ The addresses change because the program gets allocated different virtual memory
 
 2.
 
+![adr space](https://github.com/darshanime/notes/raw/master/assets/ucbOS_11.png)
 The stack would be located at the top, so it seems like `envp[0]` and `argv[0]` are contenders for locating the stack, as they have the highest hex values.
 
 `sbrk(0)` gives us the start of the heap, because we have not used `malloc` yet. after that it gets us the end of the heap.
