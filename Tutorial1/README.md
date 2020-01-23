@@ -16,3 +16,17 @@ Answers for Tutorial 1
 
 5. -rw-r--r-- 1 root root 1820 Jan 21 19:34 /etc/passwd
   -rw-r----- 1 root shadow 1040 Jan 21 19:34 /etc/shadow
+  passwd stores general user info and shadow stores user passwd info.
+  shadow is encrypted.
+
+6.
+ execute permission allows you to enter the directory (i.e., cd into it), and to access any of its files.
+
+ 7. ls -a
+  files with a . are hidden
+
+  8. https://help.ubuntu.com/community/EnvironmentVariables
+  echo "export PATH=\$PATH:$(pwd)" >> ~/.bashrc
+  will permanently add the current directory to the PATH
+
+  9.'cd' is built into shell because running "which cd" shows there is no executable for it. 
