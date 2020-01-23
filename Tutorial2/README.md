@@ -38,13 +38,36 @@ The hello-static program defines much more symbols than the hello-dyn. However t
 0000000000000000 T main
                  U puts
 `
+syscall-hello.o shows a similar output, with `syscall` instead of puts, with a `buf` symbol
 
+running **strings** 
+
+>> Want to see the text inside a binary or data file?  The Linux strings command pulls those bits of text—called “strings”—out for you.
+
+`GCC: (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
+hello.c
+.LC0
+main
+_GLOBAL_OFFSET_TABLE_
+puts
+.symtab
+.strtab
+.shstrtab
+.text
+.data
+.bss
+.rodata.str1.1
+.rela.text.startup
+.comment
+.note.GNU-stack
+.rela.eh_frame
+`
 
 running **objdump** on the object file shows this 
 
 ![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
 
-syscall-hello.o shows a similar output, with `syscall` instead of puts. The only ones with values are `main` and `buf` 
+
 
 
 
