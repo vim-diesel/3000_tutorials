@@ -1,0 +1,2 @@
+syscall(1, 1, 0x7fc6d0000714, 13)                                                    = 13
++++ exited (status 13) +++

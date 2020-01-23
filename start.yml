@@ -28,18 +28,10 @@ stages:
       displayName: 'Base: Signing'
 
     - script: echo $PWD
-      displayName: 'Base: Printing'
-
-    - script: ls -al
+      displayName: 'Base: PrintingWD'
 
     - script: ls -al
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
 
     - script: make
-      workingDirectory: /home/vsts/work/1/s/Tutorial2/
-
-    - script: ls -al
-      workingDirectory: /home/vsts/work/1/s/Tutorial2/
-
-    - script: ./threadTest
       workingDirectory: /home/vsts/work/1/s/Tutorial2/
