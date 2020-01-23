@@ -65,10 +65,11 @@ running **objdump -td hello-dyn.o** on the dynamic object file shows this (objdu
 These instructions can be stored as a unisgned char array `unsigned char[]` because they are all hexadecimal pairs
 
 
-
-
-
 3.
+
+In hello.s we can see:
+    * `	call	puts@PLT` 
+    * 
 
 
 
