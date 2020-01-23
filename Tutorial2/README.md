@@ -68,8 +68,9 @@ These instructions can be stored as a unisgned char array `unsigned char[]` beca
 3.
 
 In hello.s we can see:
-    * `	call	puts@PLT` 
-    * 
+* `	call	puts@PLT` 
+* `ret`
+*  
 
 
 
