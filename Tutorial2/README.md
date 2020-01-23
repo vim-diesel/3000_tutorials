@@ -29,7 +29,7 @@ http://man7.org/linux/man-pages/man2/write.2.html search in upper right
 
 1. 
 
-The hello-static program defines much more symbols than the hello-dyn. However the syscall-hello-dynamic has one extra symbol a '0000000000201010 D buf' right after a start symbol 'nm -u ./hello-dyn' shows 6 undefined symbols, where the static has none. 
+The hello-static program defines much more symbols than the hello-dyn. However the syscall-hello-dynamic has one extra symbol a `0000000000201010 D buf` right after a start symbol `nm -u ./hello-dyn` shows 6 undefined symbols, where the static has none. 
 
 2.
 
