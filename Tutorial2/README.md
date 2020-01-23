@@ -70,7 +70,17 @@ These instructions can be stored as a unisgned char array `unsigned char[]` beca
 In hello.s we can see:
 * `	call	puts@PLT` 
 * `ret`
-*  
+*  no push, pop, 
+* a `subq	$8, %rsp`
+* no syscall
+
+In syscall-hello.s we can see a syscall, everything else similar
+
+4. 
+
+The disassembly only includes <main> 
+
+
 
 
 
