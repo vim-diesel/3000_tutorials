@@ -21,13 +21,13 @@ Answers for Tutorial 1
 
 6. execute permission allows you to enter the directory (i.e., cd into it), and to access any of its files.
 
- 7. ls -a
+7. ls -a
   files with a . are hidden
-
-  8. https://help.ubuntu.com/community/EnvironmentVariables
+8. https://help.ubuntu.com/community/EnvironmentVariables
   echo "export PATH=\$PATH:$(pwd)" >> ~/.bashrc
   will permanently add the current directory to the PATH
+  
+9.
+  'cd' is built into shell because running "which cd" shows there is no executable for it.
 
-  9.'cd' is built into shell because running "which cd" shows there is no executable for it.
-
-  10.
+10.
