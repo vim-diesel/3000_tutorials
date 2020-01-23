@@ -48,3 +48,11 @@ liblz4.so.1 => /usr/lib/x86_64-linux-gnu/liblz4.so.1 (0x00007fafcbc40000)
 libgcrypt.so.20 => /lib/x86_64-linux-gnu/libgcrypt.so.20 (0x00007fafcb920000)
 libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fafcb700000)
 libgpg-error.so.0 => /lib/x86_64-linux-gnu/libgpg-error.so.0 (0x00007fafcb4e0000)
+
+11. When a signal is delivered to a process, the process will stop what its doing, either handle or ignore the signal, or in some cases terminate, depending on the signal.
+
+The kill command is used to send signals to processes.
+
+12. When we use strace on the statically linked executable the number of system calls is much lower. Also, ltrace cannot be used "Couldn't find .dynsym or .dynstr in "/proc/3545/exe"
+
+13. The csimpleshell prints the Child ID to the terminal upon execution/completion.
