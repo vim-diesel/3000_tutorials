@@ -19,8 +19,7 @@ Answers for Tutorial 1
   passwd stores general user info and shadow stores user passwd info.
   shadow is encrypted.
 
-6.
- execute permission allows you to enter the directory (i.e., cd into it), and to access any of its files.
+6. execute permission allows you to enter the directory (i.e., cd into it), and to access any of its files.
 
  7. ls -a
   files with a . are hidden
@@ -29,4 +28,6 @@ Answers for Tutorial 1
   echo "export PATH=\$PATH:$(pwd)" >> ~/.bashrc
   will permanently add the current directory to the PATH
 
-  9.'cd' is built into shell because running "which cd" shows there is no executable for it. 
+  9.'cd' is built into shell because running "which cd" shows there is no executable for it.
+
+  10.
