@@ -1,5 +1,5 @@
 # Tutorial 2
-
+---
 Answers for Tutorial 2
 
 # Function calls, library calls, and system calls
@@ -22,7 +22,7 @@ they all have all their permission bits set and they are all owned by user:user
 6. 
 http://man7.org/linux/man-pages/man2/write.2.html search in upper right
 
-
+---
 # Comparing C and assembly
 
 1. 
