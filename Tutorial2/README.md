@@ -64,9 +64,9 @@ puts
 .rela.eh_frame
 `
 
-running **objdump** on the object file shows this 
+running **objdump -td** on the object file shows this 
 
-![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20113416.png)
+![pic](https://github.com/vim-diesel/3000_tutorials/blob/master/Tutorial2/Annotation%202020-01-23%20122615.png)
 
 
 >> Object files are almost full executables. They contain machine code, but that code still requires a relocation step. It also contains metadata about the addresses of its variables and functions (called symbols) in an associative data structure called a symbol table. The addresses may not be the final address of the symbol in the final executable. They also contain some information for the loader and probably some other stuff.
