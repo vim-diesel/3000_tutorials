@@ -78,10 +78,15 @@ In syscall-hello.s we can see a syscall, everything else similar
 
 4. 
 
-The disassembly from objdump only includes the `main` section, whereas the `gcc -S` includes other sections
+The disassembly from `objdump -d hello.o` only includes the `main` section, whereas the `gcc -S` includes other sections
 
 5. 
+6.
+7.
+All of the output of `gcc -v` is info from the compiler, including linking info and GCC Options, and lbrary path info
 
+---
+# Examining the runtime memory map
 
 
 
