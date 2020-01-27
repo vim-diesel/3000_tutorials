@@ -1,0 +1,18 @@
+Continuing.
+
+Program received signal SIGINT, Interrupt.
+0x00007f253b910081 in __GI___libc_read (fd=0, buf=0x7fffbceb6670, nbytes=1024)
+    at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Catchpoint 2 (call to syscall read), 0x00007f253b910081 in __GI___libc_read (fd=0, buf=0x7fffbceb6670, 
+    nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Catchpoint 2 (returned from syscall read), 0x00007f253b910081 in __GI___libc_read (fd=0, buf=0x7fffbceb6670, 
+    nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:27
+Catchpoint 1 (any syscall)
+Breakpoint 2 at 0x7f3eab401810: file 3000shell.c, line 313.
+Num     Type           Disp Enb Address            What
+1       catchpoint     keep y                      syscall "<any syscall>" 
+2       breakpoint     keep y   0x00007f3eab401810 in main at 3000shell.c:313
