@@ -16,3 +16,538 @@ Breakpoint 2 at 0x7f3eab401810: file 3000shell.c, line 313.
 Num     Type           Disp Enb Address            What
 1       catchpoint     keep y                      syscall "<any syscall>" 
 2       breakpoint     keep y   0x00007f3eab401810 in main at 3000shell.c:313
+Continuing.
+
+Catchpoint 1 (call to syscall clone), 0x00007f3eaace4b1c in __libc_fork () at ../sysdeps/nptl/fork.c:135
+Continuing.
+
+Catchpoint 1 (returned from syscall clone), 0x00007f3eaace4b1c in __libc_fork () at ../sysdeps/nptl/fork.c:135
+../sysdeps/nptl/fork.c:0: No such file or directory.
+../sysdeps/nptl/fork.c:0: No such file or directory.
+../sysdeps/nptl/fork.c:1: No such file or directory.
+	in /build/glibc-OTsEL5/glibc-2.27/posix/../sysdeps/nptl/fork.c
+Continuing.
+
+Catchpoint 1 (call to syscall wait4), 0x00007f3eaace45f1 in __libc_wait (stat_loc=0x7fffc366d604)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Catchpoint 1 (returned from syscall wait4), 0x00007f3eaace45f1 in __libc_wait (stat_loc=0x7fffc366d604)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Catchpoint 1 (call to syscall write), 0x00007f3eaad10154 in __GI___libc_write (fd=2, buf=0x7fffc366af50, 
+    nbytes=36) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Catchpoint 1 (returned from syscall write), 0x00007f3eaad10154 in __GI___libc_write (fd=2, buf=0x7fffc366af50, 
+    nbytes=36) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Catchpoint 1 (call to syscall rt_sigreturn), <signal handler called>
+Continuing.
+
+Catchpoint 1 (returned from syscall rt_sigreturn), 0x00007f3eaace4b1c in __libc_fork ()
+    at ../sysdeps/nptl/fork.c:135
+Continuing.
+
+Catchpoint 1 (call to syscall wait4), 0x00007f3eaace45f1 in __libc_wait (stat_loc=0x0)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Catchpoint 1 (returned from syscall wait4), 0x00007f3eaace45f1 in __libc_wait (stat_loc=0x0)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Catchpoint 1 (call to syscall write), 0x00007f3eaad10154 in __GI___libc_write (fd=1, buf=0x7fffbb3f7260, 
+    nbytes=7) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Catchpoint 1 (returned from syscall write), 0x00007f3eaad10154 in __GI___libc_write (fd=1, buf=0x7fffbb3f7260, 
+    nbytes=7) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Catchpoint 1 (call to syscall read), 0x00007f3eaad10081 in __GI___libc_read (fd=0, buf=0x7fffbb3f7670, 
+    nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Catchpoint 1 (returned from syscall read), 0x00007f3eaad10081 in __GI___libc_read (fd=0, buf=0x7fffbb3f7670, 
+    nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Catchpoint 1 (call to syscall exit_group), 0x00007f3eaace4e06 in __GI__exit (status=0)
+    at ../sysdeps/unix/sysv/linux/_exit.c:31
+Continuing.
+[Inferior 1 (process 1202) exited normally]
+The program is not being run.
+Num     Type           Disp Enb Address            What
+1       catchpoint     keep y                      syscall "<any syscall>" 
+	catchpoint already hit 15 times
+2       breakpoint     keep y   0x00007f3eab401810 in main at 3000shell.c:313
+Attaching to program: /mnt/c/3000/Tutorials/Tutorial3/3000shell, process 1270
+Reading symbols from /lib/x86_64-linux-gnu/libc.so.6...Reading symbols from /usr/lib/debug//lib/x86_64-linux-gnu/libc-2.27.so...done.
+done.
+Reading symbols from /lib64/ld-linux-x86-64.so.2...Reading symbols from /usr/lib/debug//lib/x86_64-linux-gnu/ld-2.27.so...done.
+done.
+0x00007f99b9510081 in __GI___libc_read (fd=0, 
+    buf=0x7fffc43ab670, nbytes=1024)
+    at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall clone), 0x00007f99b94e4b1c in __libc_fork () at ../sysdeps/nptl/fork.c:135
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (returned from syscall clone), 0x00007f99b94e4b1c in __libc_fork ()
+    at ../sysdeps/nptl/fork.c:135
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall wait4), 0x00007f99b94e45f1 in __libc_wait (stat_loc=0x7fffcbad21b4)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (returned from syscall wait4), 0x00007f99b94e45f1 in __libc_wait (stat_loc=0x7fffcbad21b4)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall write), 0x00007f99b9510154 in __GI___libc_write (fd=2, buf=0x7fffcbacfb00, 
+    nbytes=36) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (returned from syscall write), 0x00007f99b9510154 in __GI___libc_write (fd=2, 
+    buf=0x7fffcbacfb00, nbytes=36) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall rt_sigreturn), <signal handler called>
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (returned from syscall rt_sigreturn), 0x00007f99b94e4b1c in __libc_fork ()
+    at ../sysdeps/nptl/fork.c:135
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall wait4), 0x00007f99b94e45f1 in __libc_wait (stat_loc=0x0)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (returned from syscall wait4), 0x00007f99b94e45f1 in __libc_wait (stat_loc=0x0)
+    at ../sysdeps/unix/sysv/linux/wait.c:29
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall write), 0x00007f99b9510154 in __GI___libc_write (fd=1, buf=0x7fffc43ab260, 
+    nbytes=7) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (returned from syscall write), 0x00007f99b9510154 in __GI___libc_write (fd=1, 
+    buf=0x7fffc43ab260, nbytes=7) at ../sysdeps/unix/sysv/linux/write.c:27
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall read), 0x00007f99b9510081 in __GI___libc_read (fd=0, buf=0x7fffc43ab670, 
+    nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (returned from syscall read), 0x00007f99b9510081 in __GI___libc_read (fd=0, 
+    buf=0x7fffc43ab670, nbytes=1024) at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Thread 1 "3000shell" hit Catchpoint 1 (call to syscall exit_group), 0x00007f99b94e4e06 in __GI__exit (status=0)
+    at ../sysdeps/unix/sysv/linux/_exit.c:31
+Continuing.
+[Inferior 1 (process 1270) exited normally]
+The program is not being run.
+Num     Type           Disp Enb Address            What
+1       catchpoint     keep y                      syscall "<any syscall>" 
+	catchpoint already hit 30 times
+2       breakpoint     keep y   0x00007f99b9e01810 in main at 3000shell.c:313
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info guile -- Prefix command for Guile info displays
+info handle -- What debugger does when program gets various signals
+info inferiors -- IDs of specified inferiors (all inferiors if no argument)
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info unwinder -- GDB command to list unwinders
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+info xmethod -- GDB command to list registered xmethod matchers
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+All defined variables:
+
+File ../csu/init-first.c:
+int __libc_argc;
+char **__libc_argv;
+int __libc_multiple_libcs;
+
+File ../elf/dl-sysdep.c:
+int __GI___libc_enable_secure;
+void *__GI___libc_stack_end;
+int __libc_multiple_libcs;
+void *_dl_random;
+
+File ../login/utmp_file.c:
+const struct utfuncs __libc_utmp_file_functions;
+static int file_fd;
+static off64_t file_offset;
+static _Bool file_writable;
+static struct utmp last_entry;
+
+File ../misc/syslog.c:
+static int LogFacility;
+static int LogFile;
+static int LogMask;
+static int LogStat;
+static const char *LogTag;
+static int LogType;
+static struct sockaddr_un SyslogAddr;
+static int connected;
+static __libc_lock_t syslog_lock;
+
+File ../nss/getXXbyYY.c:
+static char *buffer;
+static __libc_lock_t lock;
+
+File ../nss/getXXent.c:
+static char *buffer;
+static __libc_lock_t lock;
+
+File ../nss/getXXent_r.c:
+static service_user *last_nip;
+static __libc_lock_t lock;
+static service_user *nip;
+static service_user *startp;
+static int stayopen_tmp;
+
+File ../signal/allocrtsig.c:
+static int current_rtmax;
+static int current_rtmin;
+
+File ../stdlib/strtol_l.c:
+const unsigned long __strtol_ul_max_tab[];
+const unsigned char __strtol_ul_rem_tab[];
+
+File ../sysdeps/gnu/errlist.c:
+const char * const_sys_errlist_internal[135];
+const int _sys_nerr_internal;
+
+File ../sysdeps/gnu/siglist.c:
+const char * const__new_sys_sigabbrev[65];
+const char * const__new_sys_siglist[65];
+
+File ../sysdeps/gnu/unwind-resume.c:
+void (*__libgcc_s_resume)(struct _Unwind_Exception *);
+static _Unwind_Reason_Code (*libgcc_s_personality)(int, _Unwind_Action, _Unwind_Exception_Class, struct _Unwind_Exception *, 
+    struct _Unwind_Context *);
+
+File ../sysdeps/ieee754/dbl-64/wordsize-64/s_modf.c:
+static const double one;
+
+File ../sysdeps/ieee754/dbl-64/wordsize-64/s_scalbn.c:
+static const double huge;
+static const double tiny;
+static const double two54;
+static const double twom54;
+
+File ../sysdeps/ieee754/float128/../ldbl-128/s_frexpl.c:
+static const _Float128 two114;
+
+File ../sysdeps/ieee754/float128/../ldbl-128/s_modfl.c:
+static const _Float128 one;
+
+File ../sysdeps/ieee754/float128/../ldbl-128/s_scalbnl.c:
+static const _Float128 huge;
+static const _Float128 tiny;
+static const _Float128 two114;
+static const _Float128 twom114;
+
+File ../sysdeps/ieee754/flt-32/s_frexpf.c:
+static const float two25;
+
+File ../sysdeps/ieee754/flt-32/s_modff.c:
+static const float one;
+
+File ../sysdeps/ieee754/flt-32/s_scalbnf.c:
+static const float huge;
+static const float tiny;
+static const float two25;
+static const float twom25;
+
+File ../sysdeps/ieee754/ldbl-96/s_frexpl.c:
+static const long double two65;
+
+File ../sysdeps/ieee754/ldbl-96/s_modfl.c:
+static const long double one;
+
+File ../sysdeps/posix/gai_strerror.c:
+static const struct {
+    int16_t code;
+    uint16_t idx;
+} msgidx[17];
+static const union msgstr_t msgstr;
+
+File ../sysdeps/posix/getaddrinfo.c:
+static const void *__elf_set___libc_subfreeres_element_fini__;
+static const struct addrinfo default_hints;
+static const struct prefixentry default_labels[8];
+static const struct prefixentry default_precedence[5];
+static const struct scopeentry default_scopes[3];
+static struct timespec gaiconf_mtime;
+static int gaiconf_reload_flag;
+static int gaiconf_reload_flag_ever_set;
+static const struct gaih_typeproto gaih_inet_typeproto[9];
+static const struct prefixentry *labels;
+static const struct gaih_servtuple nullserv;
+static const struct prefixentry *precedence;
+static const struct scopeentry *scopes;
+
+File ../sysdeps/posix/profil.c:
+static size_t nsamples;
+static size_t pc_offset;
+static u_int pc_scale;
+static u_short *samples;
+
+File ../sysdeps/posix/signal.c:
+sigset_t _sigintr;
+
+File ../sysdeps/posix/sprofil.c:
+static struct region default_overflow_region;
+static unsigned int overflow_counter;
+static struct prof_info prof_info;
+
+File ../sysdeps/posix/system.c:
+static struct sigaction intr;
+static __libc_lock_t lock;
+static struct sigaction quit;
+static int sa_refcntr;
+
+File ../sysdeps/posix/tempname.c:
+static const char letters[63];
+
+File ../sysdeps/unix/bsd/getpt.c:
+const char __libc_ptyname1[17];
+const char __libc_ptyname2[17];
+
+File ../sysdeps/unix/clock_gettime.c:
+static hp_timing_t freq;
+
+File ../sysdeps/unix/getlogin.c:
+static char name[33];
+
+File ../sysdeps/unix/sysv/linux/check_pf.c:
+static const void *__elf_set___libc_subfreeres_element_freecache__;
+static struct cached_data *cache;
+static __libc_lock_t lock;
+static struct cached_data noai6ai_cached;
+
+File ../sysdeps/unix/sysv/linux/ptsname.c:
+static char buffer[30];
+
+File ../sysdeps/unix/sysv/linux/sigstack.c:
+static const char __evoke_link_warning_sigstack[77];
+
+File ../sysdeps/unix/sysv/linux/ttyname.c:
+static char *getttyname_name;
+static char *ttyname_buf;
+
+File ../sysdeps/unix/sysv/linux/x86_64/brk.c:
+void *__curbrk;
+
+File ../sysdeps/unix/sysv/linux/x86_64/init-first.c:
+long (*__vdso_clock_gettime)(clockid_t, struct timespec *);
+long (*__vdso_getcpu)(unsigned int *, unsigned int *, void *);
+
+File ../sysdeps/wordsize-64/../../io/ftw.c:
+static const int ftw_arr[7];
+static const int nftw_arr[7];
+
+File ../sysdeps/x86/cacheinfo.c:
+long __x86_data_cache_size;
+long __x86_data_cache_size_half;
+int __x86_prefetchw;
+long __x86_raw_data_cache_size;
+long __x86_raw_data_cache_size_half;
+long __x86_raw_shared_cache_size;
+long __x86_raw_shared_cache_size_half;
+long __x86_shared_cache_size;
+long __x86_shared_cache_size_half;
+long __x86_shared_non_temporal_threshold;
+static const struct intel_02_cache_info intel_02_known[68];
+
+File ../sysdeps/x86_64/backtrace.c:
+static const void *__elf_set___libc_subfreeres_element_free_mem__;
+static void *libgcc_handle;
+static _Unwind_Reason_Code (*unwind_backtrace)(_Unwind_Trace_Fn, void *);
+static _Unwind_Word (*unwind_getcfa)(struct _Unwind_Context *);
+static _Unwind_Ptr (*unwind_getip)(struct _Unwind_Context *);
+
+File ../sysdeps/x86_64/multiarch/varshift.c:
+const int8_t ___m128i_shift_right[31];
+
+File /build/glibc-OTsEL5/glibc-2.27/build-tree/amd64-libc/dl-tunable-list.h:
+static tunable_t tunable_list[22];
+
+File /build/glibc-OTsEL5/glibc-2.27/build-tree/amd64-libc/intl/plural.c:
+static const yytype_int8 yycheck[55];
+static const yytype_uint8 yydefact[27];
+static const yytype_int8 yydefgoto[3];
+static const yytype_int8 yypact[27];
+static const yytype_int8 yypgoto[3];
+static const yytype_uint8 yyr1[14];
+static const yytype_uint8 yyr2[14];
+static const yytype_uint8 yystos[27];
+static const yytype_uint8 yytable[55];
+static const yytype_uint8 yytranslate[263];
+
+File /build/glibc-OTsEL5/glibc-2.27/build-tree/amd64-libc/stdio-common/errlist-compat.c:
+const int __sys_nerr_GLIBC_2_1;
+const int __sys_nerr_GLIBC_2_3;
+const int __sys_nerr_GLIBC_2_4;
+static const char __evoke_link_warning_sys_errlist[68];
+static const char __evoke_link_warning_sys_nerr[65];
+
+File 3000shell.c:
+const char *proc_prefix;
+
+File C-address.c:
+const struct __locale_data _nl_C_LC_ADDRESS;
+
+File C-collate.c:
+const struct __locale_data _nl_C_LC_COLLATE;
+static const char collseqmb[256];
+static const uint32_t collseqwc[263];
+
+File C-ctype.c:
+const struct __locale_data _nl_C_LC_CTYPE;
+const char _nl_C_LC_CTYPE_class[768];
+const char _nl_C_LC_CTYPE_class32[1024];
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[4];
+} _nl_C_LC_CTYPE_class_alnum;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[2];
+    uint32_t level3[2];
+} _nl_C_LC_CTYPE_class_alpha;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[2];
+} _nl_C_LC_CTYPE_class_blank;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[4];
+} _nl_C_LC_CTYPE_class_cntrl;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[2];
+} _nl_C_LC_CTYPE_class_digit;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[4];
+} _nl_C_LC_CTYPE_class_graph;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[2];
+    uint32_t level3[2];
+} _nl_C_LC_CTYPE_class_lower;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[4];
+} _nl_C_LC_CTYPE_class_print;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[4];
+} _nl_C_LC_CTYPE_class_punct;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[1];
+    uint32_t level3[2];
+} _nl_C_LC_CTYPE_class_space;
+const struct {
+    uint32_t isctype_data[8];
+    uint32_t header[5];
+    uint32_t level1[1];
+    uint32_t level2[2];
+    uint32_t level3[2];
+Quit
