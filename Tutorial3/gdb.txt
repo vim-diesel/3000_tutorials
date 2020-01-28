@@ -551,3 +551,440 @@ const struct {
     uint32_t level2[2];
     uint32_t level3[2];
 Quit
+Continuing.
+
+Catchpoint 2 (call to syscall clone), 0x00007f5eecce4b1c in __libc_fork () at ../sysdeps/nptl/fork.c:135
+Continuing.
+[New process 1404]
+[Switching to process 1404]
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (call to syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/local/sbin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (returned from syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/local/sbin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (call to syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/local/bin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (returned from syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/local/bin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (call to syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/sbin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (returned from syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/sbin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (call to syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/bin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (returned from syscall stat), 0x00007f5eecd0f775 in __GI___xstat (vers=<optimized out>, 
+    name=0x7fffc75da750 "/usr/bin/whoami", buf=0x7fffc75da670) at ../sysdeps/unix/sysv/linux/wordsize-64/xstat.c:35
+Continuing.
+
+Thread 2.1 "3000shell" hit Catchpoint 2 (call to syscall execve), 0x00007f5eecce4e37 in execve ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+process 1404 is executing new program: /usr/bin/whoami
+Error in re-setting breakpoint 1: Function "main" not defined.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall execve), 0x00007f1aaca01090 in _start ()
+   from /lib64/ld-linux-x86-64.so.2
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall brk), 0x00007f1aaca1bec9 in __brk (addr=addr@entry=0x0)
+    at ../sysdeps/unix/sysv/linux/x86_64/brk.c:31
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall brk), 0x00007f1aaca1bec9 in __brk (addr=addr@entry=0x0)
+    at ../sysdeps/unix/sysv/linux/x86_64/brk.c:31
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall access), _dl_important_hwcaps (platform=0x7f1aaca217e2 "haswell", 
+    platform_len=7, sz=sz@entry=0x7f1aacc27938 <ncapstr>, max_capstrlen=max_capstrlen@entry=0x7f1aacc27930 <max_capstrlen>)
+    at dl-hwcaps.c:131
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall access), _dl_important_hwcaps (platform=0x7f1aaca217e2 "haswell", 
+    platform_len=7, sz=sz@entry=0x7f1aacc27938 <ncapstr>, max_capstrlen=max_capstrlen@entry=0x7f1aacc27930 <max_capstrlen>)
+    at dl-hwcaps.c:131
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall access), 0x00007f1aaca1ce27 in __access (
+    file=file@entry=0x7f1aaca23dd0 <preload_file> "/etc/ld.so.preload", type=type@entry=4)
+    at ../sysdeps/unix/sysv/linux/access.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall access), 0x00007f1aaca1ce27 in __access (
+    file=file@entry=0x7f1aaca23dd0 <preload_file> "/etc/ld.so.preload", type=type@entry=4)
+    at ../sysdeps/unix/sysv/linux/access.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall openat), 0x00007f1aaca1ccdd in __libc_open64 (
+    file=file@entry=0x7f1aaca21428 "/etc/ld.so.cache", oflag=oflag@entry=524288) at ../sysdeps/unix/sysv/linux/open64.c:47
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall openat), 0x00007f1aaca1ccdd in __libc_open64 (
+    file=file@entry=0x7f1aaca21428 "/etc/ld.so.cache", oflag=oflag@entry=524288) at ../sysdeps/unix/sysv/linux/open64.c:47
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall fstat), 0x00007f1aaca1cc43 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7ffff6779cd0) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall fstat), 0x00007f1aaca1cc43 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7ffff6779cd0) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=addr@entry=0x0, len=50654, 
+    prot=prot@entry=1, flags=flags@entry=2, fd=fd@entry=3, offset=offset@entry=0) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=addr@entry=0x0, len=50654, 
+    prot=prot@entry=1, flags=flags@entry=2, fd=fd@entry=3, offset=offset@entry=0) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall close), 0x00007f1aaca1ced7 in __close (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall close), 0x00007f1aaca1ced7 in __close (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall access), _dl_load_cache_lookup (name=name@entry=0x7f1aace009c9 "libc.so.6")
+    at dl-cache.c:266
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall access), _dl_load_cache_lookup (
+    name=name@entry=0x7f1aace009c9 "libc.so.6") at dl-cache.c:266
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall openat), 0x00007f1aaca1ccdd in __libc_open64 (
+    file=file@entry=0x7f1aacc29dd0 "/lib/x86_64-linux-gnu/libc.so.6", oflag=oflag@entry=524288)
+    at ../sysdeps/unix/sysv/linux/open64.c:47
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall openat), 0x00007f1aaca1ccdd in __libc_open64 (
+    file=file@entry=0x7f1aacc29dd0 "/lib/x86_64-linux-gnu/libc.so.6", oflag=oflag@entry=524288)
+    at ../sysdeps/unix/sysv/linux/open64.c:47
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aaca1cda4 in __libc_read (fd=fd@entry=3, buf=0x7ffff6779e98, 
+    nbytes=832) at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aaca1cda4 in __libc_read (fd=fd@entry=3, 
+    buf=0x7ffff6779e98, nbytes=832) at ../sysdeps/unix/sysv/linux/read.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall fstat), 0x00007f1aaca1cc43 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7ffff6779d30) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall fstat), 0x00007f1aaca1cc43 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7ffff6779d30) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=addr@entry=0x0, 
+    len=len@entry=8192, prot=prot@entry=3, flags=flags@entry=34, fd=fd@entry=-1, offset=offset@entry=0)
+    at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=addr@entry=0x0, 
+    len=len@entry=8192, prot=prot@entry=3, flags=flags@entry=34, fd=fd@entry=-1, offset=offset@entry=0)
+    at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=0x0, len=len@entry=4131552, 
+    prot=prot@entry=5, flags=flags@entry=2050, fd=fd@entry=3, offset=0) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=0x0, 
+    len=len@entry=4131552, prot=prot@entry=5, flags=flags@entry=2050, fd=fd@entry=3, offset=0)
+    at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=0x7f1aac9e7000, len=24576, 
+    prot=prot@entry=3, flags=flags@entry=2066, fd=fd@entry=3, offset=1994752) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=0x7f1aac9e7000, len=24576, 
+    prot=prot@entry=3, flags=flags@entry=2066, fd=fd@entry=3, offset=1994752) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=0x7f1aac9ed000, len=15072, 
+    prot=prot@entry=3, flags=flags@entry=50, fd=fd@entry=-1, offset=offset@entry=0) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mmap), 0x00007f1aaca1cf43 in __mmap64 (addr=0x7f1aac9ed000, len=15072, 
+    prot=prot@entry=3, flags=flags@entry=50, fd=fd@entry=-1, offset=offset@entry=0) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall close), 0x00007f1aaca1ced7 in __close (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall close), 0x00007f1aaca1ced7 in __close (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:27
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall arch_prctl), 0x00007f1aaca01024 in init_tls () at rtld.c:740
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall arch_prctl), 0x00007f1aaca01024 in init_tls () at rtld.c:740
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mprotect), 0x00007f1aaca1cff7 in mprotect ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+../sysdeps/unix/syscall-template.S:78: No such file or directory.
+../sysdeps/unix/syscall-template.S:78: No such file or directory.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall munmap), 0x00007f1aaca1cfd7 in munmap ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall munmap), 0x00007f1aaca1cfd7 in munmap ()
+    at ../sysdeps/unix/syscall-template.S:78
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall brk), 0x00007f1aac7164b9 in __brk (addr=addr@entry=0x0)
+    at ../sysdeps/unix/sysv/linux/x86_64/brk.c:31
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall brk), 0x00007f1aac7164b9 in __brk (addr=addr@entry=0x0)
+    at ../sysdeps/unix/sysv/linux/x86_64/brk.c:31
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall brk), 0x00007f1aac7164b9 in __brk (addr=addr@entry=0x7fffee7c7000)
+    at ../sysdeps/unix/sysv/linux/x86_64/brk.c:31
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall brk), 0x00007f1aac7164b9 in __brk (addr=addr@entry=0x7fffee7c7000)
+    at ../sysdeps/unix/sysv/linux/x86_64/brk.c:31
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall openat), 0x00007f1aac70fdb1 in __GI___open64_nocancel (
+    file=file@entry=0x7f1aac7bb190 <archfname> "/usr/lib/locale/locale-archive", oflag=oflag@entry=524288)
+    at ../sysdeps/unix/sysv/linux/open64.c:69
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall openat), 0x00007f1aac70fdb1 in __GI___open64_nocancel (
+    file=file@entry=0x7f1aac7bb190 <archfname> "/usr/lib/locale/locale-archive", oflag=oflag@entry=524288)
+    at ../sysdeps/unix/sysv/linux/open64.c:69
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall fstat), 0x00007f1aac70f7c3 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7f1aac9ecac0 <archive_stat>) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall fstat), 0x00007f1aac70f7c3 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7f1aac9ecac0 <archive_stat>) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mmap), 0x00007f1aac71ba13 in __GI___mmap64 (addr=addr@entry=0x0, 
+    len=len@entry=1683056, prot=prot@entry=1, flags=flags@entry=2, fd=fd@entry=3, offset=offset@entry=0)
+    at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mmap), 0x00007f1aac71ba13 in __GI___mmap64 (addr=addr@entry=0x0, 
+    len=len@entry=1683056, prot=prot@entry=1, flags=flags@entry=2, fd=fd@entry=3, offset=offset@entry=0)
+    at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall close), 0x00007f1aac710947 in __GI___close_nocancel (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:37
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall close), 0x00007f1aac710947 in __GI___close_nocancel (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:37
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall openat), 0x00007f1aac70fdb1 in __GI___open64_nocancel (
+    file=0x7ffff677a220 "/usr/share/locale/locale.alias", oflag=524288) at ../sysdeps/unix/sysv/linux/open64.c:69
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall openat), 0x00007f1aac70fdb1 in __GI___open64_nocancel (
+    file=0x7ffff677a220 "/usr/share/locale/locale.alias", oflag=524288) at ../sysdeps/unix/sysv/linux/open64.c:69
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall fstat), 0x00007f1aac70f7c3 in __GI___fxstat (vers=<optimized out>, fd=3, 
+    buf=0x7ffff677a080) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall fstat), 0x00007f1aac70f7c3 in __GI___fxstat (vers=<optimized out>, 
+    fd=3, buf=0x7ffff677a080) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, buf=0x7fffee7a64b0, 
+    nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, 
+    buf=0x7fffee7a64b0, nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, buf=0x7fffee7a64b0, 
+    nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, 
+    buf=0x7fffee7a64b0, nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, buf=0x7fffee7a64b0, 
+    nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, 
+    buf=0x7fffee7a64b0, nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, buf=0x7fffee7a64b0, 
+    nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, 
+    buf=0x7fffee7a64b0, nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, buf=0x7fffee7a64b0, 
+    nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, 
+    buf=0x7fffee7a64b0, nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, buf=0x7fffee7a64b0, 
+    nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, 
+    buf=0x7fffee7a64b0, nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, buf=0x7fffee7a64b0, 
+    nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall read), 0x00007f1aac710114 in __GI___read_nocancel (fd=3, 
+    buf=0x7fffee7a64b0, nbytes=512) at ../sysdeps/unix/sysv/linux/read.c:40
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall close), 0x00007f1aac710947 in __GI___close_nocancel (fd=3)
+    at ../sysdeps/unix/sysv/linux/close.c:37
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall close), 0x00007f1aac710947 in __GI___close_nocancel (fd=3)
+    at ../sysdeps/unix/sysv/linux/close.c:37
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall openat), 0x00007f1aac70fdb1 in __GI___open64_nocancel (
+    file=0x7fffee7a75d0 "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", oflag=oflag@entry=524288)
+    at ../sysdeps/unix/sysv/linux/open64.c:69
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall fstat), 0x00007f1aac70f7c3 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7ffff677a3c0) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall fstat), 0x00007f1aac70f7c3 in __GI___fxstat (vers=vers@entry=1, 
+    fd=fd@entry=3, buf=buf@entry=0x7ffff677a3c0) at ../sysdeps/unix/sysv/linux/wordsize-64/fxstat.c:35
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall mmap), 0x00007f1aac71ba13 in __GI___mmap64 (addr=addr@entry=0x0, len=252, 
+    prot=prot@entry=1, flags=flags@entry=2, fd=fd@entry=3, offset=offset@entry=0) at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall mmap), 0x00007f1aac71ba13 in __GI___mmap64 (addr=addr@entry=0x0, 
+    len=252, prot=prot@entry=1, flags=flags@entry=2, fd=fd@entry=3, offset=offset@entry=0)
+    at ../sysdeps/unix/sysv/linux/mmap64.c:52
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (call to syscall close), 0x00007f1aac710947 in __GI___close_nocancel (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:37
+Continuing.
+
+Thread 2.1 "whoami" hit Catchpoint 2 (returned from syscall close), 0x00007f1aac710947 in __GI___close_nocancel (fd=fd@entry=3)
+    at ../sysdeps/unix/sysv/linux/close.c:37
+Continuing.
+
+Thread 2.1 "whoami" received signal SIGSEGV, Segmentation fault.
+_nl_load_locale (file=<optimized out>, category=category@entry=12) at loadlocale.c:283
+Continuing.
+
+Program terminated with signal SIGSEGV, Segmentation fault.
+The program no longer exists.
+The program is not being run.
+The program is not being run.
+loadlocale.c:1: No such file or directory.
+loadlocale.c:1: No such file or directory.
+loadlocale.c:1: No such file or directory.
+loadlocale.c:1: No such file or directory.
+loadlocale.c:1: No such file or directory.
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+0	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+0	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
