@@ -15,6 +15,7 @@
 * GDB output for parent shows lots of file access, write and read and fstat
 * Strace shows all of them, but in different format, including arguments and return value.
 * The GDB shows that the function calls are coming from inside libraries. 
-5. 
+5. The shell uses `>` to redirect output to a file (lines 294)
+6. 
 
 
