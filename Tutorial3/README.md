@@ -7,6 +7,8 @@
 
 1. 
 2. When program i srun in backgorund, the parent process continues execution. If it is not run in the background, then the 3000shell waits for the program to return. This results in the output of the background program being printed to the terminal, while the 3000shell is still waiting for more input, how ever it does not interfere witht he 3000shell.
+* Nano takes over input while 3000shell waits for input in background, as does top, 
+* When the process exits, we return to the 3000shell, but we are missing the prompt `$` because it was printed before the executed process printed it's output to terminal
 3. Find process id using `top` and use `kill -9 [id]`
 4. 
 * GDB output for child shows lots of memory manipulation
