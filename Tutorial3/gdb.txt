@@ -988,3 +988,9 @@ loadlocale.c:1: No such file or directory.
 	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
 	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
 	in /build/glibc-OTsEL5/glibc-2.27/locale/loadlocale.c
+Breakpoint 1 at 0x7f5eed401810: file 3000shell.c, line 313.
+Catchpoint 2 (any syscall)
+Continuing.
+
+Catchpoint 2 (call to syscall clone), 0x00007f5eecce4b1c in __libc_fork () at ../sysdeps/nptl/fork.c:135
+135	../sysdeps/nptl/fork.c: No such file or directory.
