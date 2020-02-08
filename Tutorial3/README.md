@@ -16,6 +16,8 @@ https://github.com/vim-diesel/3000_tutorials/tree/master/Tutorial3
 * Strace shows all of them, but in different format, including arguments and return value.
 * The GDB shows that the function calls are coming from inside libraries. 
 5. The shell uses `>` to redirect output to a file (lines 294)
-6. 
+6. IIf `wait` returns a value of -1 then there was not child processes to wait for.
+7. `if (the_signal == SIGUSR1)` was placed in the singal_handler function, but didn't work. 
+8. 
 
 

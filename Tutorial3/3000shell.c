@@ -94,7 +94,7 @@ void find_binary(char *name, char *path, char *fn, int fn_size) {
         int r, stat_return;
 
         struct stat file_status;
-
+        printf("Finding binary!\n");
         if (name[0] == '.' || name[0] == '/') {
                 strncpy(fn, name, fn_size);
                 return;
@@ -199,6 +199,11 @@ void signal_handler(int the_signal)
         if (the_signal != SIGCHLD) {
                 fprintf(stderr, "Child handler called for signal %d?!\n",
                         the_signal);
+                return;
+        }
+
+        if (the_signal == SIGUSR1){
+                fprintf(stdout, "OUCH!\n");
                 return;
         }
 
