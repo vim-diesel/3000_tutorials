@@ -195,6 +195,11 @@ void signal_handler(int the_signal)
                 fprintf(stderr, "Received SIGHUP.\n");
                 return;
         }
+
+        if (the_signal == SIGUSR1){
+                fprintf(stdout, "OUCH!\n");
+                return;
+        }
         
         if (the_signal != SIGCHLD) {
                 fprintf(stderr, "Child handler called for signal %d?!\n",
@@ -202,10 +207,7 @@ void signal_handler(int the_signal)
                 return;
         }
 
-        if (the_signal == SIGUSR1){
-                fprintf(stdout, "OUCH!\n");
-                return;
-        }
+        
 
         pid = wait(&status);
 
@@ -334,6 +336,10 @@ int main(int argc, char *argv[], char *envp[])
         
         if (sigaction(SIGHUP, &signal_handler_struct, NULL)) {
                 fprintf(stderr, "Couldn't register SIGHUP handler.\n");
+        }
+
+        if (sigaction(SIGUSR1, &signal_handler_struct, NULL)) {
+                fprintf(stderr, "Couldn't register SIGUSR1 handler.\n");
         }
         
         username = find_env("USER", default_username, envp);
